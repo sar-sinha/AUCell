@@ -1,0 +1,14 @@
+AUCell_buildRankings    Build gene expression rankings for each cell
+AUCell_calcAUC          Calculate AUC
+AUCell_createViewerApp
+                        Create AUCell viewer app
+AUCell_exploreThresholds
+                        AUCell_exploreThresholds
+AUCell_plotHist         Plot AUC histogram
+AUCell_plotTSNE         Plot
+aucellResults-class     Wrapper to the matrix that stores the AUC or
+                        the cell rankings.
+nGenes                  GeneSet methods
+plotGeneCount           plotGeneCount
+plotTsne_cellProps      plotTsne_cellProps
+updateAucellResults     Update AUCell results

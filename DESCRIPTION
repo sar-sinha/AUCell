@@ -1,0 +1,39 @@
+Package: AUCell
+Type: Package
+Title: AUCell: Analysis of 'gene set' activity in single-cell RNA-seq
+        data (e.g. identify cells with specific gene signatures)
+Version: 1.4.1
+Date: 2018-06-12
+Author: Sara Aibar, Stein Aerts. Laboratory of Computational Biology. VIB-KU
+    Leuven Center for Brain & Disease Research. Leuven, Belgium
+Maintainer: Sara Aibar <sara.aibar@kuleuven.vib.be>
+Description: AUCell allows to identify cells with active gene sets 
+    (e.g. signatures, gene modules...) in single-cell RNA-seq data. 
+    AUCell uses the "Area Under the Curve" (AUC) to calculate whether a critical 
+    subset of the input gene set is enriched within the expressed genes for each cell. 
+    The distribution of AUC scores across all the cells allows exploring the 
+    relative expression of the signature. Since the scoring method is ranking-based, 
+    AUCell is independent of the gene expression units and the normalization procedure.
+    In addition, since the cells are evaluated individually, it can easily be 
+    applied to bigger datasets, subsetting the expression matrix if needed. 
+URL: http://scenic.aertslab.org
+Imports: data.table, graphics, grDevices, GSEABase, methods, mixtools,
+        R.utils, shiny, stats, SummarizedExperiment, utils
+Enhances: doMC, doRNG, doParallel, foreach
+Suggests: Biobase, BiocStyle, devtools, DT, GEOquery, knitr, NMF,
+        plotly, R2HTML, rbokeh, rmarkdown, Rtsne, testthat, zoo
+License: GPL-3
+biocViews: ImmunoOncology, SingleCell, GeneSetEnrichment,
+        Transcriptomics, Transcription, GeneExpression, WorkflowStep,
+        Normalization
+LazyData: TRUE
+VignetteBuilder: knitr
+RoxygenNote: 6.0.1
+git_url: https://git.bioconductor.org/packages/AUCell
+git_branch: RELEASE_3_8
+git_last_commit: 58b6e2a
+git_last_commit_date: 2019-01-04
+Date/Publication: 2019-01-04
+NeedsCompilation: no
+Packaged: 2019-01-05 02:29:20 UTC; biocbuild
+Built: R 3.5.2; ; 2019-01-05 08:36:56 UTC; unix
